@@ -6,24 +6,21 @@
 #	separator = "="
 
 #	with open('factors.properties') as f:
-#
+
 #		for line in f:
 #			if separator in line:
 #				line = line.rstrip()
 #				if "=" not in line: continue #skips blanks and comments w/o =
 #				if line.startswith("#"): continue #skips comments which contain =
-#				# Find the name and value by splitting the string
+				# Find the name and value by splitting the string
 #				name, value = line.split(separator)
 #				name = name.strip()
 #				value = value.strip()
 #				print name
-#				if name == n:
-#					print name, value
-#				print n
-#
+#				if ((len(name) == len(str(n))) and (all(a in str(n) for a in str(name)))):
+#					print "The array ", name, "has the factors", value
 #	print(keys)
-#### This would be caching algorithm, to figure out if the new array already exists in the properties file, if so then use that instead of running the rest of the program
-#### Not working due to inability to read the 'n' input
+#### This is the caching algorithm, to figure out if the new array already exists in the properties file, if so then use that instead of running the rest of the program.
 
 
 def factors():
